@@ -13,7 +13,13 @@ var store = new Store({
         require('../Models/workout.js'),
         require('../Models/uniq.js'),
         require('../Models/tsc.js'),
-    ]
+    ],
+
+    inflection: {
+        'knex_migrations_locks': 'knex_migrations_lock',
+        'inputs': 'inputs'
+    },
+
 });
 console.log(store.config)
 

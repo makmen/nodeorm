@@ -8,6 +8,7 @@ var Uniq = require('../Models/uniq');
 var TSC = require('../Models/tsc');
 var GApi = require('../libs/gunit');
 var _ = require('lodash');
+var knex = require('../configs/knex');
 
 router.get('/create', function (req, res) {
     const saveWorkout = async () => {
@@ -171,6 +172,13 @@ router.get('/gexercise/save/:id', function (req, res) {
     if (id === undefined) {
         throw undefined;
     }
+
+    // knex.table('workouts').where('number', '>', 70000).pluck('id').then(function(ids) { console.log(ids); });
+    // // var a = knex('workouts').where({
+    // //     first_name: 'Test',
+    // //     last_name:  'User'
+    // // }).select('id');
+    // console.log(a)
 
     let T = 'exercise';
     let TUnit = 'workout';
