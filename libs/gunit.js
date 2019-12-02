@@ -18,6 +18,15 @@ GUnit.intersect = function(itemsFirst, itemsSecond, separator = 'S') {
     return _.intersectionBy( itemsFirst, itemsSecond, separator);
 };
 
+GUnit.getIds = function(items) {
+    let ids = [];
+    items.forEach(function(item){
+        ids.push(item.id);
+    });
+
+    return ids;
+};
+
 GUnit.getParent = function() {
     console.log('getParent...');
 };

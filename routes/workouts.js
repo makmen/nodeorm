@@ -7,6 +7,7 @@ var Input = require('../Models/input');
 var Uniq = require('../Models/uniq');
 var TSC = require('../Models/tsc');
 var GApi = require('../libs/gunit');
+var _ = require('lodash');
 
 router.get('/create', function (req, res) {
     const saveWorkout = async () => {
@@ -109,7 +110,7 @@ router.get('/ginput/save/:id', function (req, res) {
     let TUnit = 'workout';
     let GUnit = 'group_input';
 
-    let inputIds = [2];
+    let inputIds = [1,6, 8];
 
     async function sequence() {
         let entity = await Workout.find(id);
@@ -127,30 +128,26 @@ router.get('/ginput/save/:id', function (req, res) {
             await entity.save();
         }
 
+        // prepare new elements for insert
         let tscArray = [];
         units.forEach(function(item){
             tscArray.push(TSC.new({Tu: TUnit, Su: uniq.id, T: T, S: item.id}));
         });
 
+        // old elements in DB
         let tsc = await TSC.where({ Tu: TUnit, Su: uniq.id });
-        if (!tsc.length) {
-            tsc = await TSC.create(tscArray);
-        } else {
-            // console.log(tsc);
-            // console.log(tscArray);
 
-            // let difference = GApi.difference(tscArray, tsc);
-            let intersect = GApi.intersect(tscArray, tsc);
-            console.log(intersect);
-            let difference = GApi.difference(tsc, tscArray);
-            if (difference.length) {
-                console.log(difference);
-                console.log(difference.length);
-            }
-
+        // sync
+        let difference = GApi.difference(tsc, tscArray);
+        if (difference.length) {
+            await TSC.where({id: (GApi.getIds(difference))}).destroyAll();
+        }
+        difference = GApi.difference(tscArray, tsc);
+        if (difference.length) {
+            await TSC.create(difference);
         }
 
-        return { entity, units, uniq, tsc };
+        return { entity };
     }
 
     var error = false;
@@ -170,8 +167,8 @@ router.get('/ginput/save/:id', function (req, res) {
 
 router.get('/gexercise/save/:id', function (req, res) {
 
-    let workoutId = req.params.id;
-    if (workoutId === undefined) {
+    let id = req.params.id;
+    if (id === undefined) {
         throw undefined;
     }
 
@@ -179,40 +176,50 @@ router.get('/gexercise/save/:id', function (req, res) {
     let TUnit = 'workout';
     let GUnit = 'group_exercise';
 
-    let exercisesIds = [3, 1, 4];
+    let exercisesIds = [2, 5, 6, 7];
 
     async function sequence() {
-        let workout = await Workout.find(workoutId);
-        let exercises =  await Exercise.get(exercisesIds);
+        let entity = await Workout.find(id);
+        let units = await Exercise.get(exercisesIds);
 
         // create uniq ID in all base
-        let uniq = await Uniq.where({T: TUnit, S: workout.id, C: GUnit }).first();
+        let uniq = await Uniq.where({T: TUnit, S: entity.id, C: GUnit }).first();
         if (uniq === undefined) {
-            uniq = await addUniq(T, workout.id, GUnit);
+            uniq = await addUniq(TUnit, entity.id, GUnit);
         }
 
         // save uniq ID in group
-        workout.group_exercise = uniq.id;
-        await workout.save();
-
-        let tscArray = [];
-        exercises.forEach(function(item){
-            tscArray.push(TSC.new({Tu: TUnit, Su: uniq.id, T: T, S: item.id}));
-        });
-        let tsc = await TSC.where({Tu: TUnit, Su: uniq.id });
-        if (!tsc.length) {
-            tsc = await TSC.create(tscArray);
+        if (entity[GUnit] !== uniq.id) {
+            entity[GUnit] = uniq.id;
+            await entity.save();
         }
 
-        return { workout, exercises, uniq, tsc };
+        // prepare new elements for insert
+        let tscArray = [];
+        units.forEach(function(item){
+            tscArray.push(TSC.new({Tu: TUnit, Su: uniq.id, T: T, S: item.id}));
+        });
+
+        // old elements in DB
+        let tsc = await TSC.where({ Tu: TUnit, Su: uniq.id });
+
+        // sync
+        let difference = GApi.difference(tsc, tscArray);
+        if (difference.length) {
+            await TSC.where({id: (GApi.getIds(difference))}).destroyAll();
+        }
+        difference = GApi.difference(tscArray, tsc);
+        if (difference.length) {
+            await TSC.create(difference);
+        }
+
+        return { entity };
     }
 
     var error = false;
     sequence().then(process => {
         // console.log(process.workout);
-        // console.log(process.exercises);
-        // console.log(process.uniq);
-        console.log(process.tsc);
+
     }).catch(err => {
         console.log(err)
         error = true;
