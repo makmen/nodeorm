@@ -6,6 +6,45 @@ var GUnit = function() {
 
 };
 
+GUnit.testFunc = async function() {
+    var a = Math.random()*1000;
+    a = a.toString();
+    var promise = new Promise(function(resolve, reject){
+        resolve('45')
+
+    });
+
+    let result = await promise.then(res => {
+        console.log('Inside then', res);
+        return res;
+    }).catch(e => {
+        console.log(e);
+    })
+
+    console.log('______')
+    console.log(result)
+    console.log('______')
+
+    return result;
+
+    promise.then(
+        function(result) {
+            /!* обработает успешное выполнение *!/
+            console.log(111);
+            return result;
+            },
+        function(error) {
+            /!* обработает ошибку *!/
+            console.log(222);
+            return error;
+        }
+    );
+    console.log(333);
+
+    return a;
+};
+
+
 GUnit.union = function(itemsFirst, itemsSecond, separator = 'S') {
     return _.uniqBy( _.union(itemsFirst, itemsSecond), separator);
 };

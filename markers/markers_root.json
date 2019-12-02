@@ -1,0 +1,894 @@
+[
+  {
+    "uid": "A1",
+    "huid": "@view_rols_menu",
+    "view": {
+      "action": "View",
+      "entity": "Roles Management Menu"
+    },
+    "ru_descr": "видеть все роли сайта",
+    "en_descr": "view all roles suit"
+  },
+  {
+    "uid": "B1",
+    "huid": "@create_new_role",
+    "view": {
+      "action": "Create",
+      "entity": "New Role"
+    },
+    "ru_descr": "создавать любые роли",
+    "en_descr": "create something roles"
+  },
+  {
+    "uid": "C1",
+    "huid": "@edit_role",
+    "view": {
+      "action": "Edit",
+      "entity": "Role"
+    },
+    "ru_descr": "редактировать роли",
+    "en_descr": "create something roles"
+  },
+  {
+    "uid": "D1",
+    "huid": "@delete_role",
+    "view": {
+      "action": "Delete",
+      "entity": "Role"
+    },
+    "ru_descr": "удалять роли",
+    "en_descr": "delete something roles"
+  },
+  {
+    "uid": "E1",
+    "huid": "@assign_roles",
+    "view": {
+      "action": "Assign to Users Groups",
+      "entity": "Role"
+    },
+    "ru_descr": "переопределять роль пользователю",
+    "en_descr": "assign to users groups"
+  },
+  {
+    "uid": "F1",
+    "huid": "@view_self",
+    "view": {
+      "action": "View",
+      "entity": "Self"
+    },
+    "ru_descr": "видеть свой профиль",
+    "en_descr": "view self account"
+  },
+  {
+    "uid": "G1",
+    "huid": "@edit_self",
+    "view": {
+      "action": "Edit",
+      "entity": "Self"
+    },
+    "ru_descr": "редактировать свой профиль",
+    "en_descr": "edit self account"
+  },
+  {
+    "uid": "H1",
+    "huid": "@create_super_admin",
+    "view": {
+      "action": "Create",
+      "entity": "Super Admin"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Супер админ'",
+    "en_descr": "create users to 'Super Admin' role"
+  },
+  {
+    "uid": "I1",
+    "huid": "@view_super_admins",
+    "view": {
+      "action": "View",
+      "entity": "Super Admin"
+    },
+    "ru_descr": "видеть профиля 'Супер Админов'",
+    "en_descr": "view all 'Super Admin'"
+  },
+  {
+    "uid": "J1",
+    "huid": "@edit_super_admin",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Super Admin"
+    },
+    "ru_descr": "редактировать 'Супер Админов'",
+    "en_descr": "edit something 'Super Admin'"
+  },
+  {
+    "uid": "K1",
+    "huid": "@archive_super_admin",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Super Admin"
+    },
+    "ru_descr": "архивировать 'Супер Админ'",
+    "en_descr": "archive something 'Super Admin'"
+  },
+  {
+    "uid": "M1",
+    "huid": "@delete_super_admin",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Super Admin"
+    },
+    "ru_descr": "удалять 'Супер Админ'",
+    "en_descr": "delete something 'Super Admin'"
+  },
+  {
+    "uid": "L1",
+      "huid": "@create_driveline_admin",
+      "view":
+      {
+      "action": "Create",
+      "entity": "Driveline Admin"
+      },
+    "ru_descr": "создавать 'Driveline Admin'",
+    "en_descr": "create users to 'Driveline Admin' role"
+  },
+  {
+    "uid": "N1",
+    "huid": "@view_driveline_admin",
+    "view":
+    {
+      "action": "View",
+      "entity": "Driveline Admin"
+    },
+    "ru_descr": "видеть профиля 'Driveline Admin'",
+    "en_descr": "view all 'Driveline Admin'"
+  },
+  {
+    "uid": "O1",
+    "huid": "@edit_driveline_admin",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Driveline Admin"
+    },
+    "ru_descr": "редактировать 'Driveline Admin'",
+    "en_descr": "edit something 'Driveline Admin'"
+  },
+  {
+    "uid": "P1",
+    "huid": "@archive_driveline_admin",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Driveline Admin"
+    },
+    "ru_descr": "архивировать 'Driveline Admin'",
+    "en_descr": "archive something 'Driveline Admin'"
+  },
+  {
+    "uid": "Q1",
+    "huid": "@delete_driveline_admin",
+    "view": {
+      "action": "Delete",
+      "entity": "Driveline Admin"
+    },
+    "ru_descr": "удалять 'Driveline Admin'",
+    "en_descr": "delete something 'Driveline Admin'"
+  },
+  {
+    "uid": "R1",
+    "huid": "@create_facility_admin",
+    "view": {
+      "action": "Create",
+      "entity": "Facility Admin"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Facility Admin'",
+    "en_descr": "create users to 'Facility Admin' role"
+  },
+  {
+    "uid": "S1",
+    "huid": "@view_facility_admin",
+    "view": {
+      "action": "View",
+      "entity": "Facility Admin"
+  },
+    "ru_descr": "видеть профиля 'Facility Admin'",
+    "en_descr": "view all 'Facility Admin'"
+  },
+  {
+    "uid": "T1",
+    "huid": "@edit_facility_admin",
+    "view": {
+      "action": "Edit",
+      "entity": "Facility Admin"
+  },
+    "ru_descr": "редактировать 'Facility Admin'",
+    "en_descr": "edit something 'Facility Admin'"
+  },
+  {
+    "uid": "U1",
+    "huid": "@archive_facility_admin",
+    "view": {
+      "action": "Archive",
+      "entity": "Facility Admin"
+    },
+    "ru_descr": "архивировать 'Facility Admin'",
+    "en_descr": "archive something 'Facility Admin'"
+  },
+  {
+    "uid": "V1",
+    "huid": "@delete_facility_admin",
+    "view": {
+      "action": "Delete",
+      "entity": "Facility Admin"
+    },
+      "ru_descr": "удалять 'Facility Admin'",
+      "en_descr": "delete something 'Facility Admin'"
+  },
+  {
+    "uid": "W1",
+    "huid": "@create_chief_facility_trainer",
+    "view": {
+      "action": "Create",
+      "entity": "Chief Facility Trainer"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Chief Facility Trainer'",
+    "en_descr": "create users to 'Chief Facility Trainer' role"
+  },
+  {
+    "uid": "X1",
+    "huid": "@view_chief_facility_trainer",
+    "view": {
+      "action": "View",
+      "entity": "Chief Facility Trainer"
+    },
+    "ru_descr": "видеть профиля 'Chief Facility Trainer'",
+    "en_descr": "view all 'Chief Facility Trainer'"
+  },
+  {
+    "uid": "Y1",
+    "huid": "@edit_chief_facility_trainer",
+    "view": {
+      "action": "Edit",
+      "entity": "Chief Facility Trainer"
+    },
+    "ru_descr": "редактировать 'Chief Facility Trainer'",
+    "en_descr": "edit something 'Chief Facility Trainer'"
+  },
+  {
+    "uid": "Z1",
+    "huid": "@archive_chief_facility_trainer",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Chief Facility Trainer"
+    },
+    "ru_descr": "архивировать 'Chief Facility Trainer'",
+    "en_descr": "archive something 'Chief Facility Trainer'"
+  },
+  {
+    "uid": "AA",
+    "huid": "@delete_chief_facility_trainer",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Chief Facility Trainer"
+    },
+    "ru_descr": "удалять 'Chief Facility Trainer'",
+    "en_descr": "delete something 'Chief Facility Trainer'"
+  },
+  {
+    "uid": "AB",
+    "huid": "@create_facility_trainer",
+    "view":
+    {
+      "action": "Create",
+      "entity": "Facility Trainer"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Facility Trainer'",
+    "en_descr": "create users to 'Facility Trainer' role"
+  },
+  {
+    "uid": "AC",
+    "huid": "@view_facility_trainer",
+    "view":
+    {
+      "action": "View",
+      "entity": "Facility Trainer"
+    },
+    "ru_descr": "видеть профиля 'Facility Trainer'",
+    "en_descr": "view all 'Facility Trainer'"
+  },
+  {
+    "uid": "AD",
+    "huid": "@edit_facility_trainer",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Facility Trainer"
+    },
+    "ru_descr": "редактировать 'Facility Trainer'",
+    "en_descr": "edit something 'Facility Trainer'"
+  },
+  {
+    "uid": "AE",
+    "huid": "@archive_facility_trainer",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Facility Trainer"
+    },
+    "ru_descr": "архивировать 'Facility Trainer'",
+    "en_descr": "archive something 'Facility Trainer'"
+  },
+  {
+    "uid": "AF",
+    "huid": "@delete_facility_trainer",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Facility Trainer"
+    },
+    "ru_descr": "удалять 'Facility Trainer'",
+    "en_descr": "delete something 'Facility Trainer'"
+  },
+  {
+    "uid": "AG",
+    "huid": "@create_team_trainer",
+    "view":
+    {
+      "action": "Create",
+      "entity": "Team Trainer"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Team Trainer'",
+    "en_descr": "create users to 'Team Trainer' role"
+  },
+  {
+    "uid": "AH",
+    "huid": "@view_team_trainer",
+    "view":
+    {
+      "action": "View",
+      "entity": "All Facility Team Trainers"
+    },
+    "ru_descr": "видеть все профили 'Team Trainers'",
+    "en_descr": "view all 'Team Trainers'"
+  },
+  {
+    "uid": "AI",
+    "huid": "@view_team_trainer",
+    "view":
+    {
+      "action": "View",
+      "entity": "Team Trainers assigned to the same teams"
+    },
+    "ru_descr": "краткое описание маркера на русском языке",
+    "en_descr": "краткое описание маркера на английском языке"
+  },
+  {
+    "uid": "AJ",
+    "huid": "@edit_team_trainer",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Team Trainer"
+    },
+    "ru_descr": "редактировать 'Team Trainer'",
+    "en_descr": "edit something 'Team Trainer'"
+  },
+  {
+    "uid": "AK",
+    "huid": "@archive_team_trainer",
+    "view": {
+      "action": "Archive",
+      "entity": "Team Trainer"
+    },
+    "ru_descr": "архивировать 'Team Trainer'",
+    "en_descr": "archive something 'Team Trainer'"
+  },
+  {
+    "uid": "AM",
+    "huid": "@delete_team_trainer",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Team Trainer"
+    },
+    "ru_descr": "удалять 'Team Trainer'",
+    "en_descr": "delete something 'Team Trainer'"
+  },
+  {
+    "uid": "AL",
+      "huid": "@create_athlete",
+      "view":
+    {
+      "action": "Create",
+      "entity": "Athlete"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Athlete'",
+    "en_descr": "create users to 'Athlete' role"
+  },
+  {
+    "uid": "VA",
+    "huid": "@view_atchlete",
+    "view":
+    {
+      "action": "View",
+      "entity": "Athlete"
+    },
+    "ru_descr": "просматривать атлета",
+    "en_descr": "view 'Athlete'"
+  },
+  {
+    "uid": "EA",
+    "huid": "@edit_atchlete",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Athlete"
+    },
+    "ru_descr": "редактировать атлета",
+    "en_descr": "edit 'Athlete'"
+  },
+  {
+    "uid": "RA",
+    "huid": "@archive_atchlete",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Athlete"
+    },
+    "ru_descr": "архивировать атлета",
+    "en_descr": "archive 'Athlete'"
+  },
+  {
+    "uid": "DA",
+    "huid": "@delete_archive",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Athlete"
+    },
+    "ru_descr": "удалять архивированного атлета",
+    "en_descr": "delete archived 'Athlete'"
+  },
+  {
+    "uid": "AN",
+    "huid": "@view_athlete",
+    "view":
+    {
+      "action": "View",
+      "entity": "Athlete"
+    },
+    "ru_descr": "видеть все профили 'Athlete'",
+    "en_descr": "view all 'Athlete'"
+  },
+  {
+    "uid": "AO",
+    "huid": "@edit_athlete",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Athlete"
+    },
+    "ru_descr": "редактировать 'Athlete'",
+    "en_descr": "edit something 'Athlete'"
+  },
+  {
+    "uid": "AP",
+    "huid": "@archive_athlete",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Athlete"
+    },
+    "ru_descr": "архивировать 'Athlete'",
+    "en_descr": "archive something 'Athlete'"
+  },
+  {
+    "uid": "AQ",
+    "huid": "@delete_athlete",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Athlete"
+    },
+    "ru_descr": "удалять 'Athlete'",
+    "en_descr": "delete something 'Athlete'"
+  },
+  {
+    "uid": "AR",
+    "huid": "@create_team_trainer",
+    "view":
+    {
+      "action": "Create",
+      "entity": "Team Athlete"
+    },
+    "ru_descr": "создавать пользователь с ролью 'Team Athlete'",
+    "en_descr": "create users to 'Team Athlete' role"
+  },
+  {
+    "uid": "AS",
+    "huid": "@view_team_trainer",
+    "view":
+    {
+      "action": "View",
+      "entity": "Team Trainers"
+    },
+    "ru_descr": "видеть команды 'Team Trainers'",
+    "en_descr": "view all team 'Team Trainers'"
+  },
+  {
+    "uid": "AT",
+    "huid": "@view_team_athlete",
+    "view":
+    {
+      "action": "View",
+      "entity": "Team Athletes assigned to the same team"
+    },
+    "ru_descr": "Добавлять атлетов в команды",
+    "en_descr": "Add athletes in team"
+  },
+  {
+    "uid": "AU",
+    "huid": "@edit_team_athlete",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Team Athlete"
+    },
+    "ru_descr": "редактировать 'Team Athlete'",
+    "en_descr": "edit something 'Team Athlete'"
+  },
+  {
+    "uid": "AV",
+    "huid": "@archive_team_athlete",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Team Athlete"
+    },
+    "ru_descr": "архивировать 'Team Athlete'",
+    "en_descr": "archive something 'Team Athlete'"
+  },
+  {
+    "uid": "AW",
+    "huid": "@delete_team_athlete",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Team Athlete"
+    },
+    "ru_descr": "удалять 'Team Athlete'",
+    "en_descr": "delete something 'Team Athlete'"
+  },
+  {
+    "uid": "AY",
+    "huid": "@create_teams",
+    "view":
+    {
+      "action": "Create",
+      "entity": "Teams"
+    },
+    "ru_descr": "создавать команды",
+    "en_descr": "create teams"
+  },
+  {
+    "uid": "AZ",
+    "huid": "@view_teams",
+    "view": {
+      "action": "View",
+      "entity": "Teams"
+    },
+    "ru_descr": "видеть команды",
+    "en_descr": "view teams"
+  },
+  {
+    "uid": "ST",
+    "huid": "@show_teams",
+    "view": {
+      "action": "View",
+      "entity": "Teams"
+    },
+    "ru_descr": "просмотр профиля команды",
+    "en_descr": "show profile team"
+  },
+  {
+    "uid": "BA",
+    "huid": "@edit_teams",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Teams"
+    },
+    "ru_descr": "редактировать команды",
+    "en_descr": "edit teams"
+  },
+  {
+    "uid": "BB",
+    "huid": "@archive_teams",
+    "view":
+    {
+      "action": "Archive",
+      "entity": "Teams"
+    },
+    "ru_descr": "архивировать команды",
+    "en_descr": "archive teams"
+  },
+  {
+    "uid": "BC",
+    "huid": "@delete_teams",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Teams"
+    },
+    "ru_descr": "удалять команды",
+    "en_descr": "delete teams"
+  },
+  {
+    "uid": "ES",
+    "huid": "@edit_statuses",
+    "ru_descr": "редактировать статус в настройках системы",
+    "en_descr": "edit statuses in general settings"
+  },
+  {
+    "uid": "EC",
+    "huid": "@edit_status_color",
+    "ru_descr": "редактировать цвет статусов в настройках системы",
+    "en_descr": "edit status color in general settings"
+  },
+  {
+    "uid": "ED",
+    "huid": "@edit_status_description",
+    "ru_descr": "редактировать описание статусов в настройках системы",
+    "en_descr": "edit status description in general settings"
+  },
+  {
+    "uid": "EF",
+    "huid": "@edit_default_status",
+    "ru_descr": "выбирать статус по умолчанию",
+    "en_descr": "can select default status"
+  },
+  {
+    "uid": "EO",
+    "huid": "@edit_status_order",
+    "ru_descr": "редактировать порядок статусов",
+    "en_descr": "edit status order"
+  },
+  {
+    "uid": "RS",
+    "huid": "@updated_super_admin",
+    "ru_descr": "редактирование, создание, архивирование супер админов",
+    "en_descr": "CRUD super admins"
+  },
+  {
+    "uid": "VF",
+    "huid": "@view_facilities",
+    "view":
+    {
+      "action": "View",
+      "entity": "Facilities"
+    },
+    "ru_descr": "Видеть элемент Facilities в меню навигации и просматривать список фасилитей",
+    "en_descr": ""
+  },
+  {
+    "uid": "VU",
+    "huid": "@view_users",
+    "view":
+    {
+      "action": "View",
+      "entity": "Users"
+    },
+    "ru_descr": "Просматривать пользователей",
+    "en_descr": ""
+  },
+  {
+    "uid": "VG",
+    "huid": "@view_general_settings",
+    "view":
+    {
+      "action": "View",
+      "entity": "General Settings"
+    },
+    "ru_descr": "Видеть элемент General Settings в меню навигации",
+    "en_descr": ""
+  },
+  {
+    "uid": "VY",
+    "huid": "@view_facility",
+    "view":
+    {
+      "action": "View",
+      "entity": "Facility"
+    },
+    "ru_descr": "Просматривать страницу фасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "CF",
+    "huid": "@create_facility",
+    "view":
+    {
+      "action": "Create",
+      "entity": "Facility"
+    },
+    "ru_descr": "создавать фасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "UF",
+    "huid": "@edit_facility",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Facility"
+    },
+    "ru_descr": "Редактировать фасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "DF",
+    "huid": "@delete_facility",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "Facility"
+    },
+    "ru_descr": "Удалять фасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "US",
+    "huid": "@edit_facility_schedule",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "Schedule"
+    },
+    "ru_descr": "Редактировать расписание фасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "VB",
+    "huid": "@view_subfacilities",
+    "view":
+    {
+      "action": "View",
+      "entity": "SubFacilities"
+    },
+    "ru_descr": "Просматривать список саб фасилитей",
+    "en_descr": ""
+  },
+  {
+    "uid": "SB",
+    "huid": "@view_subfacility",
+    "view":
+    {
+      "action": "View",
+      "entity": "SubFacility"
+    },
+    "ru_descr": "Просматривать информацию сабфасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "CB",
+    "huid": "@create_subfacility",
+    "view":
+    {
+      "action": "Create",
+      "entity": "SubFacility"
+    },
+    "ru_descr": "Создавать сабфасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "EB",
+    "huid": "@edit_subfacility",
+    "view":
+    {
+      "action": "Edit",
+      "entity": "SubFacility"
+    },
+    "ru_descr": "Редактировать сабфасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "DS",
+    "huid": "@delete_subfacility",
+    "view":
+    {
+      "action": "Delete",
+      "entity": "SubFacility"
+    },
+    "ru_descr": "Удалять сабфасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "EH",
+    "huid": "@edit_subfacility_schedule",
+    "view": {
+      "action": "Edit",
+      "entity": "SubFacility Schedule"
+    },
+    "ru_descr": "Редактировать расписание сабфасилити",
+    "en_descr": ""
+  },
+  {
+    "uid": "PY",
+    "ru_descr": "Маркер роли Супер Админ",
+    "huid": "@super_admin"
+  },
+  {
+    "uid": "YP",
+    "ru_descr": "Маркер роли Драйвлайн админ",
+    "huid": "@driveline_admin"
+  },
+  {
+    "uid": "8H",
+    "ru_descr": "Маркер роли Фасилити Админ",
+    "huid": "@facility_admin"
+  },
+  {
+    "uid": "BV",
+    "ru_descr": "Маркер роли Главный тренер фасилити",
+    "huid": "@chief_facility_trainer"
+  },
+  {
+    "uid": "1D",
+    "ru_descr": "Маркер роли Фасилити тренера",
+    "huid": "@facility_trainer"
+  },
+  {
+    "uid": "ZD",
+    "ru_descr": "Маркер роли Тренера команды",
+    "huid": "@team_trainer"
+  },
+  {
+    "uid": "DJ",
+    "ru_descr": "Маркер роли Атлет",
+    "huid": "@athlete"
+  },
+  {
+    "uid": "CE",
+    "huid": "@create_exercises",
+    "view": {
+      "action": "Create",
+      "entity": "Exercise"
+    },
+    "ru_descr": "Создавать упражнения",
+    "en_descr": "Create exercises"
+  },
+  {
+    "uid": "UE",
+    "huid": "@update_exercises",
+    "view": {
+      "action": "Edit",
+      "entity": "Exercise"
+    },
+    "ru_descr": "Редактировать упражнения",
+    "en_descr": "Update exercises"
+  },
+  {
+    "uid": "UE",
+    "huid": "@update_base_exercises",
+    "view": {
+      "action": "Edit",
+      "entity": "Exercise"
+    },
+    "ru_descr": "Редактировать базовые упражнения",
+    "en_descr": "Update base exercises"
+  },
+  {
+    "uid": "DE",
+    "huid": "@delete_exercises",
+    "view": {
+      "action": "Delete",
+      "entity": "Exercise"
+    },
+    "ru_descr": "Удалять упражнения",
+    "en_descr": "Delete exercises"
+  }
+]
