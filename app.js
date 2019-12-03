@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 // var mysql = require('./configs/mysql');
 var openRecord = require('./configs/store');
+var passport = require('passport');
+require('./configs/passport.config')(passport);
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -13,6 +15,7 @@ var exercisesRouter = require('./routes/exercises');
 var inputsRouter = require('./routes/inputs');
 
 var app = express();
+app.use(passport.initialize());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

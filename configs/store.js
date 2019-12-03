@@ -13,6 +13,7 @@ var store = new Store({
         require('../Models/workout.js'),
         require('../Models/uniq.js'),
         require('../Models/tsc.js'),
+        require('../Models/user.js'),
     ],
 
     inflection: {
